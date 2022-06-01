@@ -273,7 +273,7 @@ RegisterNetEvent('qb-bossmenu:client:SocetyWithDraw', function(money)
 end)
 
 -- MAIN THREAD
-CreateThread(function()
+--[[CreateThread(function()
     if Config.UseTarget then
         for job, zones in pairs(Config.BossMenuZones) do
             for index, data in ipairs(zones) do
@@ -341,4 +341,4 @@ CreateThread(function()
             Wait(wait)
         end
     end
-end)
+end)]]
